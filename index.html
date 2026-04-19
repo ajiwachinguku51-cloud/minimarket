@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama Chi & Chi Minimarket | Fresh & Quality</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header container">
+        <div class="brand">
+            <h1 data-en="Mama Chi & Chi Minimarket" data-sw="Mama Chi & Chi Minimarket">Mama Chi & Chi Minimarket</h1>
+            <p class="tagline" data-en="Fresh groceries, friendly service, and local delivery in Kongowe." data-sw="Mboga safi, huduma ya kirafiki, na usafirishaji wa ndani katika Kongowe.">Fresh groceries, friendly service, and local delivery in Kongowe.</p>
+        </div>
+        <div class="header-actions">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search products..." data-en-placeholder="Search products..." data-sw-placeholder="Tafuta bidhaa..." aria-label="Search products">
+                <button class="search-btn" aria-label="Search">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                <span class="lang-en">EN</span>
+                <span class="lang-sw">SW</span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span class="theme-label light-label">Light</span>
+                <span class="theme-label dark-label">Dark</span>
+            </button>
+            <button class="cart-toggle" aria-label="Open shopping cart">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.1 5H19M7 13v8a2 2 0 002 2h10a2 2 0 002-2v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <div class="hero-copy">
+            <h2 data-en="Shop local essentials with easy pickup or delivery." data-sw="Nunua mahitaji ya ndani kwa urahisi wa kuchukua au usafirishaji.">Shop local essentials with easy pickup or delivery.</h2>
+            <p data-en="Discover fresh produce, pantry staples, drinks, and more — all from a trusted neighborhood minimarket." data-sw="Gundua mazao safi, vifaa vya jikoni, vinywaji, na zaidi — yote kutoka kwa duka la jirani linaloaminika.">Discover fresh produce, pantry staples, drinks, and more — all from a trusted neighborhood minimarket.</p>
+            <div class="hero-ctas">
+                <a href="#products" class="btn btn-primary" data-en="Shop Now" data-sw="Nunua Sasa">Shop Now</a>
+                <a href="#how-it-works" class="btn btn-secondary" data-en="Learn More" data-sw="Jifunze Zaidi">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTphN2U2ZDZmYzI4NmJlNGQyOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAyNTkzMjYwMzM2ODowMDA2NGZkMTE3N2ExMmRmEAIYAQ==">
+            <div class="hero-badge">
+                <span>🚚 Free Delivery</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="products" class="section">
+            <h2 class="section-title" data-en="Featured Products" data-sw="Bidhaa Zinazoangaziwa">Featured Products</h2>
+            <p class="section-subtitle" data-en="Add products to your cart, review your order, and checkout in seconds." data-sw="Ongeza bidhaa kwenye rukwama yako, hakiki agizo lako, na maliza ununuzi kwa sekunde chache.">Add products to your cart, review your order, and checkout in seconds.</p>
+            <div class="product-grid">
+                <article class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/C4D22AQH9C_8OHDZFVA/feedshare-shrink_800/feedshare-shrink_800/0/1666257506406?e=2147483647&v=beta&t=ATY2rTI2Ku9NqI7xZBlw2Fm_E2FuEbhH1H6LXrWSkAs">
+                    <div class="card-body">
+                        <h3>Mafuta ya MO Safi</h3>
+                        <p>Premium cooking oil available in 1L, 3L, and 5L bottles.</p>
+                        <div class="price-row">
+                            <span class="price">6,500 TZS</span>
+                            <span class="tag">Kitchen</span>
+                        </div>
+                        <button class="btn add-btn" data-product-id="oil" data-product-name="Mafuta ya MO Safi" data-product-price="6500" data-product-description="Premium cooking oil" data-en="Add to cart" data-sw="Ongeza kwenye rukwama">Add to cart</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://s14354.pcdn.co/wp-content/uploads/2017/01/grocery-store.png" alt="African vegetables">
+                    <div class="card-body">
+                        <h3 data-en="African Vegetables" data-sw="Mboga za Kiafrika">African Vegetables</h3>
+                        <p data-en="Fresh African vegetables including onions, tomatoes, cassava, and plantains." data-sw="Mboga safi za Kiafrika ikiwa ni pamoja na vitunguu, nyanya, muhogo, na ndizi mbichi.">Fresh African vegetables including onions, tomatoes, cassava, and plantains.</p>
+                        <div class="price-row">
+                            <span class="price">500 TZS</span>
+                            <span class="tag" data-en="Fresh" data-sw="Safi">Fresh</span>
+                        </div>
+                        <button class="btn add-btn" data-product-id="veggies" data-product-name="African Vegetables" data-product-price="500" data-product-description="Fresh African vegetables including onions, tomatoes, cassava, and plantains" data-en="Add to cart" data-sw="Ongeza kwenye rukwama">Add to cart</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.pexels.com/photos/11738254/pexels-photo-11738254.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <div class="card-body">
+                        <h3 data-en="Fruits" data-sw="Matunda">Fruits</h3>
+                        <p data-en="Tropical African fruits like mangoes, pineapples, bananas, and passion fruits." data-sw="Matunda ya kitropiki ya Kiafrika kama embe, nanasi, ndizi, na parachichi.">Tropical African fruits like mangoes, pineapples, bananas, and passion fruits.</p>
+                        <div class="price-row">
+                            <span class="price">1,000 TZS</span>
+                            <span class="tag" data-en="Produce" data-sw="Mazao">Produce</span>
+                        </div>
+                        <button class="btn add-btn" data-product-id="fruit" data-product-name="African Fruits" data-product-price="1000" data-product-description="Tropical African fruits like mangoes, pineapples, bananas, and passion fruits">Add to cart</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="data:image/jpeg;base64,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">
+                    <div class="card-body">
+                        <h3>Handkerchiefs — Small</h3>
+                        <p>Soft, everyday handkerchiefs for personal use and gifts.</p>
+                        <div class="price-row">
+                            <span class="price">500 TZS</span>
+                            <span class="tag">Small</span>
+                        </div>
+                        <button class="btn add-btn" data-product-id="handkerchief-small" data-product-name="Handkerchiefs — Small" data-product-price="500" data-product-description="Small handkerchiefs, 500 TZS each">Add to cart</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRo7oesiQrmhTBzxUwVXsumDPGXcXU5rwR9gIpoj2f5ENDukbg_yb2TJCGxtoggqL77N-MsvwGL1gnudXt1AxsgXevl7iQ_car2i697er6HuMFwPxoDFlP0BiU&usqp=CAc">
+                    <div class="card-body">
+                        <h3>Handkerchiefs — Large</h3>
+                        <p>Large size handkerchiefs made for comfort and durability.</p>
+                        <div class="price-row">
+                            <span class="price">1,000 TZS</span>
+                            <span class="tag">Large</span>
+                        </div>
+                        <button class="btn add-btn" data-product-id="handkerchief-large" data-product-name="Handkerchiefs — Large" data-product-price="1000" data-product-description="Large handkerchiefs, 1,000 TZS each">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="section">
+            <h2 class="section-title">How it Works</h2>
+            <p class="section-subtitle">A simple shopping flow built for local convenience.</p>
+            <div class="steps-grid">
+                <article class="feature-card">
+                    <h3>1. Browse the range</h3>
+                    <p>Pick the products you need from fresh produce, pantry items, drinks, or baby care.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>2. Add to cart</h3>
+                    <p>Choose your favorite items and build your order in a few taps.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>3. Checkout fast</h3>
+                    <p>Review your cart and confirm your order for pickup or local delivery.</p>
+                </article>
+            </div>
+        </section>
+
+        <aside class="cart-panel" id="cartPanel">
+            <div class="cart-header">
+                <div>
+                    <h2>Your Cart</h2>
+                    <p class="tagline">Ready when you are.</p>
+                </div>
+                <button class="close-cart" aria-label="Close cart">×</button>
+            </div>
+            <div id="cartItems" class="cart-items"></div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong id="cartTotal">TZS 0</strong>
+                </div>
+                <button id="checkoutBtn" class="btn btn-secondary">Checkout</button>
+            </div>
+        </aside>
+
+        <section id="testimonials" class="section">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Trusted by the Kongowe community for quality and convenience.</p>
+            <div class="testimonials-grid">
+                <blockquote class="testimonial-card">
+                    <p>"Mama Chi & Chi has the freshest vegetables in town. Their delivery is always on time!"</p>
+                    <cite>- Amina K., Local Resident</cite>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"Great selection of baby products and friendly staff. Highly recommend!"</p>
+                    <cite>- John M., Parent</cite>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"Convenient shopping with fast checkout. Love the handkerchiefs too!"</p>
+                    <cite>- Sarah L., Customer</cite>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>Mama Chi & Chi Minimarket</h3>
+                <p>Your trusted source for fresh groceries and daily essentials in Kongowe.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#products">Products</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 Kongowe - Miembesaba</p>
+                <p>📞 +255 673 518 358</p>
+                <p>✉️ mamachiminimarket@example.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mama Chi & Chi Minimarket. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
